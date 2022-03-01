@@ -101,8 +101,8 @@ textarea:focus, input:focus {
     width: 25%;
     height: 22%;
     max-width: 600px;
-    margin-bottom: 50px;
     position: absolute;
+    margin-bottom: 50px;
     word-wrap: break-word;
     background-color: transparent !important;
 }
@@ -118,68 +118,51 @@ textarea:focus, input:focus {
 }
 
 .chat-input {
-    top: 23.8%;
-    left: 0.8%;
+    top: 25%;
+    left: 0.5%;
     width: 25%;
-    font-size: 1.65vh;
+    font-size: 25px;
     max-width: 1000px;
     position: absolute;
     font-family: 'Nunito', sans-serif;
 }
 
 .prefix {
+    left: 1%;
     display: none;
     font-size: 1.8vh;
-    position: absolute;
     margin-top: 0.5%;
-    left: 1%;
+    position: absolute;
 }
 
 textarea {
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.8em;
-    box-sizing: border-box;
-    padding-top: .5vw;
-    padding-bottom: 1.5vw;
-    /* padding: 1%; */
-    padding-left: 1vw;
     width: 100%;
-    border-width: 0;
-    /* height: 3.15%; */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    resize: none;
-    opacity:100;
-    border-radius:.2rem;
-    background-color:rgba(255,255,255,0.87);
-    color:#000;
-    box-shadow: 0 0 5px #000;
-    animation:selectedMenu 0.5s 
+    color: black;
+    font-size: 0.8em;
+    padding-top: .5vw;
+    padding-left: 1vw;
+    padding-bottom: 1.5vw;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
 }
 
 .msg {
-    font-weight: 500;
-    animation: SendChatMessage 1s;
-    margin-bottom: 0.28%;
+    margin-bottom: 0.25%;
 }
 
 .multiline {
-    margin-left: 4%;
+    margin-left: 6.5%;
     text-indent: -1.2rem;
     white-space: pre-line;
 }
 
 .suggestions {
-    font-family: 'Nunito', sans-serif;
-    background-color:rgba(12,12,12,0.774);
-    border-radius:.2rem;
-    list-style-type: none;
-    padding: 1.5%;
-    padding-left: 1rem;
-    font-size: 0.8rem;
-    box-sizing: border-box;
-    color: white;
     width: 100%;
-    box-shadow: 0 0 5px #fff;
-    animation: AppareanceSuggestions 1s;
+    padding: 1.5%;
+    color: white;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    list-style-type: none;
+    background-color: black;
+    font-family: 'Nunito', sans-serif;
 }
