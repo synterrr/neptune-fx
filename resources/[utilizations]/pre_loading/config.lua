@@ -2,4 +2,4 @@
 -- FadeInOut: do you want clients to soft load?
 
 Config = {}
-Config.FadeInOut = false
+Config.FadeInOut = true
