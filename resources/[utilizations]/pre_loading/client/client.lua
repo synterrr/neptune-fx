@@ -1,8 +1,8 @@
--- local ClientLoaded = false
+local ClientLoaded = false
 
--- AddEventHandler("playerSpawned", function ()
--- 	if not ClientLoaded then
--- 		ShutdownLoadingScreenNui()
--- 		ClientLoaded = true
--- 	end
--- end)
+AddEventHandler("playerSpawned", function ()
+	if not ClientLoaded then
+		ShutdownLoadingScreenNui()
+		ClientLoaded = true
+	end
+end)
