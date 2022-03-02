@@ -12,8 +12,10 @@ files {
     'assets/background.png'
 }
 
-client_script 'client/client.lua'
-
 loadscreen 'index.html'
 
+shared_script 'config.lua'
+
 loadscreen_manual_shutdown "yes"
+
+client_script 'client/client.lua'
