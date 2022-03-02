@@ -78,12 +78,12 @@ textarea:focus, input:focus {
 }
 
 .help {
-    color: #AAAAAA;
+    color: #cacaca;
     /* suggestions: help text */
 }
 
 .disabled {
-    color: #AAAAAA;
+    color: #cacaca;
     /* suggestions: side-help text */
 }
 
@@ -132,12 +132,12 @@ textarea:focus, input:focus {
 
 textarea {
     width: 100%;
-    color: black;
+    color: white;
     font-size: 19px;
     padding-top: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
-    background-color: white;
+    background-color: #35363a;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -150,8 +150,8 @@ textarea {
     width: 100%;
     padding: 10px;
     color: white;
-    font-size: 17px;
+    font-size: 18px;
     list-style-type: none;
-    background-color: black;
+    background-color: #202124;
     font-family: 'Nunito', sans-serif;
 }
