@@ -7,14 +7,14 @@ fx_version 'cerulean'
 description 'Custom loading theme for Neptune-Dev.'
 
 files {
-    'index.html',
+    'html/index.html',
     'pages/index.css',
     'assets/background.png'
 }
 
-loadscreen 'index.html'
-
 shared_script 'config.lua'
+
+loadscreen 'html/index.html'
 
 loadscreen_manual_shutdown "yes"
 
