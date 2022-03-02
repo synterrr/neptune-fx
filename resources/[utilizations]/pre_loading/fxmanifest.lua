@@ -9,9 +9,10 @@ description 'Custom loading theme for Neptune-Dev.'
 files {
     'index.html',
     'pages/index.css',
-    'client/client.lua',
     'assets/background.png'
 }
+
+client_script 'client/client.lua'
 
 loadscreen 'index.html'
 
