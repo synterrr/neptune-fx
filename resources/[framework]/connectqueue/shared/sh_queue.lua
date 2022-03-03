@@ -212,7 +212,7 @@ function Queue:AddToQueue(ids, connectTime, name, src, deferrals)
             end
 
             if _pos then
-                Queue:DebugPrint(string_format("%s[%s] was prioritized and placed %d/%d in queue", tmp.name, ids[1], _pos, queueCount))
+                Queue:DebugPrint(string_format("client %s is now %d/%d in the server queue.", tmp.name, _pos, queueCount))
                 break
             end
         end
@@ -220,7 +220,7 @@ function Queue:AddToQueue(ids, connectTime, name, src, deferrals)
 
     if not _pos then
         _pos = Queue:GetSize() + 1
-        Queue:DebugPrint(string_format("%s[%s] was placed %d/%d in queue", tmp.name, ids[1], _pos, queueCount))
+        Queue:DebugPrint(string_format("client %s is now %d/%d in the server queue.", tmp.name, _pos, queueCount))
     end
 
     table_insert(queueList, _pos, tmp)
@@ -555,7 +555,7 @@ local function playerConnect(name, setKickReason, deferrals)
     if Queue:IsInQueue(ids) then
         rejoined = true
         Queue:UpdatePosData(src, ids, deferrals)
-        Queue:DebugPrint(string_format("%s[%s] has rejoined queue after cancelling", name, ids[1]))
+        Queue:DebugPrint(string_format("client %s has rejoined queue after cancelling", name))
     else
         Queue:AddToQueue(ids, connectTime, name, src, deferrals)
 
@@ -583,7 +583,7 @@ local function playerConnect(name, setKickReason, deferrals)
         if not added then CancelEvent() return end
 
         done()
-        Queue:DebugPrint(name .. "[" .. ids[1] .. "] is loading into the server")
+        Queue:DebugPrint("client is now loading server data and connecting.")
 
         return
     end
